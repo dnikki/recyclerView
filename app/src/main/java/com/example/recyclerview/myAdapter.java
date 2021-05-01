@@ -28,7 +28,8 @@ public class myAdapter extends RecyclerView.Adapter<myAdapter.holder> {
     @Override
     public void onBindViewHolder(@NonNull holder holder, int position) {
 
-       holder.t1.setText(position);
+       String title = data[position];
+       holder.t1.setText(title);
     }
 
     @Override
